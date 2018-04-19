@@ -1,0 +1,348 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none  !important;
+	list-style: none !important;
+	text-decoration: none  !important
+}
+
+html, body { background-color: #E2E2E2 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 99999;
+    color: #FFF;
+    font-size: 50px;
+    text-align: center;
+    visibility: visible;
+}
+
+.overlay .loadingBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay .loadingBox .loading {
+    position: relative;
+    width: 30%;
+    height: 100%;
+}
+
+.as-wrpr {
+	width: 42%;
+	padding: 10px;
+	overflow: hidden;
+	margin: 50px auto 50px;
+	background-color: #FFF;
+	box-shadow: 1px 3px 10px 1px #bfbfbf;
+    border-radius: 2px;
+    position: relative
+}
+
+.as-wrpr .st-title {
+	padding: 15px;
+    border-bottom: 1px solid #d0cfcd;
+}
+
+.as-wrpr .st-title h2 {
+	font-family: "Cairo";
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #383838
+}
+
+.as-wrpr .dy-contents {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.as-wrpr .dy-contents .dy-sub-title {
+	position: relative;
+    margin-right: 17px;
+}
+
+.as-wrpr .dy-contents .dy-sub-title:after {
+	content: "\f0f3";
+    position: absolute;
+    top: -12px;
+    font-family: Font Awesome\ 5 Free;
+    font-size: 18px;
+    padding: 0 5px;
+    color: #e02b2b;
+    line-height: 50px;
+}
+
+.as-wrpr .dy-contents .dy-sub-title h4 {
+	display: inline-block;
+	font-size: 1.02rem;
+    font-family: "Cairo";
+    text-align: right;
+    font-weight: 500;
+}
+
+.as-wrpr .dy-contents .dy-feilds {
+	margin-top: 30px;
+}
+
+.as-wrpr .dy-contents .dy-feilds .dy-sub-field {
+    box-shadow: 1px 2px 6px #bfbfbf;
+    margin-bottom: 15px;
+}
+
+.as-wrpr .dy-contents .dy-feilds .dy-sub-field label {
+	padding: 0 !important;
+	margin-bottom: 0 !important;
+	position: relative;
+	z-index: 1000;
+	cursor: pointer;
+}
+
+.as-wrpr .dy-contents .dy-feilds .dy-sub-field label.active:after {
+    content: "\f058";
+    font-family: Font Awesome\ 5 Free;
+    font-size: 18px;
+    padding: 0 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0ab960;
+    color: #FFF;
+    line-height: 50px;
+}
+
+.as-wrpr .dy-contents .dy-feilds .dy-sub-field label img {
+    position: relative;
+	display: inline-block;
+    margin-left: 5px;
+    z-index: 1
+}
+
+.as-wrpr .dy-contents .dy-feilds .dy-sub-field label h5 {
+	display: inline-block;
+    font-family: "Cairo";
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.as-wrpr .dy-contents .vt-btn {
+	padding: 10px;
+}
+
+.as-wrpr .dy-contents .vt-btn .vt-sub-btn {
+	display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: #0ab960;
+    border: none;
+    box-shadow: 2px 1px 6px #bfbbbb;
+    font-family: "Cairo";
+    font-weight: 600;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    opacity: .6;
+}
+
+.as-wrpr .dy-contents .vt-btn .vt-sub-btn:before {
+    content: "\f00c";
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 600;
+    font-size: 14px;
+    padding-right: 5px
+}
+
+.as-wrpr .dy-contents .vt-btn .vt-sub-btn:active {
+	top: 2px;
+	transition: top .5s ease
+}
+
+.copyrights-box div p:after {
+    content: "\f004";
+    position: absolute;
+    top: -12px;
+    font-family: Font Awesome\ 5 Free;
+    font-size: 16px;
+    padding: 0 5px;
+    color: #e02b2b;
+    line-height: 50px;
+}
+
+/***
+
+Style Of: Results Page
+
+***/
+
+.dy-sub-field .res-label {
+	padding: 0 !important;
+	padding-left: 30px !important
+}
+
+.dy-sub-field .res-label > div{
+	padding: 0 !important;
+	position: relative
+}
+
+.dy-sub-field .res-label > div > .dy-img-field {
+	display: inline-block;
+    position: relative;
+    z-index: 1111
+}
+
+
+.dy-sub-field .res-label > div > .dy-title-field {
+    position: absolute;
+    font-size: .9rem;
+    font-family: "Cairo";
+    font-weight: 600;
+    top: 5px;
+    right: 57px;
+}
+
+.dy-sub-field .res-label > div > .dy-progress-con {
+    width: 85% !important;
+    height: 17px !important;
+    position: absolute !important;
+    top: 30px;
+    right: 57px;
+    border-radius: 2px;
+}
+
+.dy-sub-field .res-label > div > .dy-progress-con > .dy-progress-field {
+	max-width: 100% !important;
+    min-width: 1% !important;
+    height: 100%;
+    border-radius: 2px;
+    position: absolute;
+    right: 0;
+}
+
+.dy-feilds .dy-sub-field 
+.res-label > div > 
+.dy-progress-con > .dy-progress-field > .dy-prec {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    font-family: "Cairo";
+    font-weight: 550;
+    color: #FFF;
+    padding-left: 2px;
+}
+
+.dy-feilds .dy-tot-vts {
+	margin: 0 !important;
+	margin-top: 10px;
+}
+
+.dy-feilds .dy-tot-vts .wr-vt-tot {
+	margin: 0 !important;
+	padding: 0 0 10px 0;
+	text-align: right;
+    font-size: .9rem;
+    font-family: "Cairo";
+    font-weight: 600;
+}
+
+.dy-feilds .dy-tot-vts .wr-vt-tot .dy-vt-db {
+	color: rgb(255, 76, 76)
+}
+
+
+/***
+
+Style Of: Home Page
+
+***/
+
+.top-title {
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 20px rgba(183, 183, 183, 0.8)
+}
+
+.top-title .title-box {
+    width: 100%;
+    height: 100%
+}
+
+.top-title .title-box .republic-ics {
+    margin-top: 5px;
+    width: 45px
+}
+
+.top-title .title-box .title-page {
+    font-family: 'Cairo';
+    font-size: 16px;
+    color: #313131;
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 26px
+}
+
+.line-row {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.line-row .line-row-res {
+    padding: 0 !important;
+    margin-bottom: 20px
+}
+
+.line-row .pol-box {
+    position: relative;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 3px 10px rgba(140, 140, 140, 0.7)
+}
+
+.line-row .pol-box:hover .pol-title {
+    color: #000
+}
+
+.line-row .pol-box .pol-img {
+    width: 100%;
+    height: 100%
+}
+
+.line-row .pol-box .pol-title {
+    padding-top: 10px;
+    font-family: 'Cairo';
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.7s ease
+ }
+
+.line-row .pol-box .pol-title span {
+    margin-right: 5px 
+}
+
+/***********************************/
+/********  Media Queries  *********/
+/*********************************/
+
+@media (min-width: 0px) and (max-width: 992px) {
+    .as-wrpr {
+        width: 90%;
+    }
+
+    .as-wrpr .dy-contents .vt-btn {
+        padding: 10px 0;
+    }
+
+    .as-wrpr .dy-contents .vt-btn .vt-sub-btn {
+        width: 100%
+    }
+}
